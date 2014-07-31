@@ -1,30 +1,11 @@
 <template name="chatroom">
- <div class="chatroom-view">
-   <nav>
-     <div class="row">
-       <div class="small-3 columns reset-icon">Reset</div>
-       <div class="small-6 columns"><h1>Chatroom</h1></div>
-       <div id="logout" class="small-3 columns"><h1>Logout</h1></div>
-     </div>
-   </nav>
-
-   <div class="chat">
-     <div class="message-me">
-       <p class="user">simon@simon.com</p>
-       <p class="reply">Hey!</p>
-     </div>
-
-     <div class="message-other">
-       <p class="user">bob@bob.com</p>
-       <p class="input">Whassup!</p>
-     </div>
-   </div>
-
- <div id="chat-box">
-   <form action="#" id="message_form">
-     <input type="text" id="message-input" placeholder="type your message..." autofocus>
-     <input class="message-send" type="submit" value="Send">
-   </form>
- </div>
- </div>
+  <div class="chatroom-view">
+    {{> navbar }}
+    <div id="messages">
+      {{#each allMessages }}
+        {{> message }}
+      {{/each}}
+    </div>
+      {{> chat_box }}
+  </div>
 </template>
