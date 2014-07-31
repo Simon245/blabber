@@ -2,13 +2,25 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "iron-router": {}
+      "iron-router": {},
+      "foundation": {},
+      "font-awesome-4-less": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.8.1",
         "commit": "74e867557fd9cb81173e048e5f81cf4a0a1160a8"
+      },
+      "foundation": {
+        "git": "https://github.com/ewall/meteor-foundation.git",
+        "tag": "v5.3.1",
+        "commit": "fcf10ccc5286dac293b5fa57980593eea6441d41"
+      },
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.4.0",
+        "commit": "250d2336a217c18eb70e9d074784a7db3ca38472"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",
