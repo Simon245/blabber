@@ -17,14 +17,52 @@
   }
 
   #accounts-email, #accounts-password, #accounts-confirm{
-    border-radius: 5px;
-    font-size: 20px;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:normal;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    border:3px solid #d83526;
+    padding:16px 40px;
+    text-decoration:none;
+    // background:-moz-linear-gradient( center top, #fe1a00 86%, #ce0100 19% );
+    // background:-ms-linear-gradient( top, #fe1a00 86%, #ce0100 19% );
+    // filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+    // background:-webkit-gradient( linear, left top, left bottom, color-stop(86%, #fe1a00), color-stop(19%, #ce0100) );
+    // background-color:#fe1a00;
+    // color:#ffffff;
+    // display:inline-block;
   }
 
-  .input {
-     // border: 1px solid #006;
-     width: 100px;
-
+  .input{
+    font-size:20px;
+    font-family:Arial;
+    font-weight:normal;
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    border:3px solid #d83526;
+    padding:16px 40px;
+    text-decoration:none;
+    background:-moz-linear-gradient( center top, #fe1a00 86%, #ce0100 19% );
+    background:-ms-linear-gradient( top, #fe1a00 86%, #ce0100 19% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(86%, #fe1a00), color-stop(19%, #ce0100) );
+    background-color:#fe1a00;
+    color:#ffffff;
+    display:inline-block;
+    }
+  .input:hover {
+      background:-moz-linear-gradient( center top, #ce0100 86%, #fe1a00 19% );
+      background:-ms-linear-gradient( top, #ce0100 86%, #fe1a00 19% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(86%, #ce0100), color-stop(19%, #fe1a00) );
+      background-color:#ce0100;
+  }
+  .input:active {
+      position:relative;
+      top:1px;
   }
 
 }

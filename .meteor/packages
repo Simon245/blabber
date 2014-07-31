@@ -10,3 +10,4 @@ coffeescript
 less
 accounts-base
 accounts-password
+iron-router
