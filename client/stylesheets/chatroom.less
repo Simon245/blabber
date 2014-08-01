@@ -1,19 +1,27 @@
 @import url('fonts.import.less');
 @import "/packages/font-awesome-4-less/font-awesome.import.less";
 
+// Navigation bar
+
 nav{
   padding-top: 10px;
 
   .reset-icon {
     #fa-icon(circle-o-notch, white);
-    font-size: 2em;
+    font-size: 30px;
   }
 
   h1 {
     font-family: 'Satisfy', cursive;
+    // font-size: 30px;
+  }
+
+  h2 {
     font-size: 30px;
   }
 }
+
+// chat area
 
 #chat-box {
   bottom: 0;
@@ -23,23 +31,36 @@ nav{
   margin: 0;
 }
 
-#message {
+#chat-box-form {
+  position: inline;
+  width: 100%;
+}
+
+#chat-form {
   width: 80%;
   float: left;
 
 }
 
-#submit-message {
+#submit-chat {
   float: left;
   width: 20%;
   height: 37px;
 }
 
-.message {
-  // background: red;
+// Message Area
+
+#messages{
+  overflow: auto;
+
+  &:last-of-type{
+    margin-bottom: 100px
+  }
+}
+
+.message-me {
   width: 70%;
   padding: 10px;
-
   margin: 10px 0;
   float: left;
   position: relative;
@@ -66,13 +87,20 @@ nav{
   width: 90%;
   padding: 10px;
   margin: 10px 0;
-  float: left;
+  float: right;
   position: relative;
 }
 
-#chat-box-form {
-  position: inline;
-  width: 100%;
+.user{
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+  padding-bottom: 5px;
+
+}
+
+.content {
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 

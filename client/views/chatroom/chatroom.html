@@ -1,10 +1,14 @@
 <template name="chatroom">
   <div class="chatroom-view">
     {{> navbar }}
-    <div id="messages">
-      {{#each allMessages }}
-        {{> message }}
-      {{/each}}
+    <div class="row">
+      <div class="small-12 columns">
+        <div id="messages">
+          {{#each allMessages }}
+            {{> message }}
+          {{/each}}
+        </div>
+      </div>
     </div>
       {{> chat_box }}
   </div>
