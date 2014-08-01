@@ -1,7 +1,8 @@
 Router.map ->
   @route 'login', { path: '/' }
   @route 'registration'
-  @route 'chatroom'
+  @route 'chatroom',
+    waitOn: -> Meteor.subscribe "messages"
 
 autoLogin = (pause) ->
   Router.go 'chatroom' if Meteor.userId()
