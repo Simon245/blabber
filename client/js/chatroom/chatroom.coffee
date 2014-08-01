@@ -6,12 +6,12 @@ getUserEmail = ->
 
 Template.chatroom.helpers
   allMessages: ->
-    Messages.find({}).fetch()
+    Messages.find({})
 
 Template.chat_box.events
   'submit #chat-box-form': (e, t) ->
 
-    input = t.find('#message')
+    input = t.find('#chat-input')
     message = input.value
     input.value = " "
     email = getUserEmail()

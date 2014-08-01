@@ -36,7 +36,7 @@ nav{
   width: 100%;
 }
 
-#chat-form {
+#chat-input {
   width: 80%;
   float: left;
 
@@ -51,7 +51,8 @@ nav{
 // Message Area
 
 #messages{
-  overflow: auto;
+  overflow-y: scroll;
+  max-height: 24rem;
 
   &:last-of-type{
     margin-bottom: 100px
