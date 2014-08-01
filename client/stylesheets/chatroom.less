@@ -1,10 +1,12 @@
 @import url('fonts.import.less');
+@import "/packages/font-awesome-4-less/font-awesome.import.less";
 
 nav{
+  padding-top: 10px;
 
   .reset-icon {
-    // #fa-icon(circle-o-notch, white);
-    font-size: 1.4em;
+    #fa-icon(circle-o-notch, white);
+    font-size: 2em;
   }
 
   h1 {
@@ -13,25 +15,50 @@ nav{
   }
 }
 
-.chatroom-view {
-  // font-family: 'Satisfy', cursive;
-  // background: rgb(128, 163, 163);
-  // text-align: center;
-  // font-size: 30px;
-}
-
 #chat-box {
   bottom: 0;
   position: fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.message-me {
-  background: red;
-  width: 90%;
+#message {
+  width: 80%;
+  float: left;
+
+}
+
+#submit-message {
+  float: left;
+  width: 20%;
+  height: 37px;
+}
+
+.message {
+  // background: red;
+  width: 70%;
   padding: 10px;
+
   margin: 10px 0;
   float: left;
   position: relative;
+  text-align: left;
+  font-size:10px;
+  font-family:Arial;
+  font-weight:normal;
+  -moz-border-radius:12px;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+  // border:3px solid #d83526;
+  // padding:16px 40px;
+  // text-decoration:none;
+  background:-moz-linear-gradient( center top, #fe1a00 86%, #ce0100 19% );
+  background:-ms-linear-gradient( top, #fe1a00 86%, #ce0100 19% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(86%, #fe1a00), color-stop(19%, #ce0100) );
+  background-color:#fe1a00;
+  color:#ffffff;
 }
 
 .message-other{
@@ -42,3 +69,12 @@ nav{
   float: left;
   position: relative;
 }
+
+#chat-box-form {
+  position: inline;
+  width: 100%;
+}
+
+
+
+
